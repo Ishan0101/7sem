@@ -1,0 +1,80 @@
+{% extends 'SpamIdentification/base.html' %}
+{% load static %}
+
+{% block page_name %}
+  Spam Message Identification
+{% endblock %}
+
+{% block title %}Final Project{% endblock %}
+
+
+
+{% block content %}
+  <hr style="color: black;" />
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="card mb-4 mt-3" style="width: 18rem; border-color: #cc6600">
+                <div class="card-body">
+                    <h5 class="card-title">Introduction</h5>
+                    <hr style="color: black;">
+                    <img class="card-img-top" src="{% static 'images/intro.png' %}" style="height: 10em; width: 10em;" >
+                </div>
+          </div>
+      </div>   
+  
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="card mb-4 mt-3" style="width: 18rem; border-color: #cc6600">
+                <div class="card-body">
+                    <h5 class="card-title">Check Message</h5>
+                    <hr style="color: black;">
+                    <img class="card-img-top" src="{% static 'images/spam1.png' %}" style="height: 10em; width: 10em;" >
+                </div>
+          </div>
+      </div> 
+
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <a style="text-decoration: none; color: black" href="{% url 'admin:index' %}">
+          <div class="card mb-4 mt-3" style="width: 18rem; border-color: #cc6600">
+            <div class="card-body">
+                <h5 class="card-title">Admin Login</h5>
+                <hr style="color: black;">
+                <img class="card-img-top" src="{% static 'images/admin.png' %}" style="height: 10em; width: 10em;" >
+            </div>
+          </div>
+        </a>  
+      </div> 
+
+    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <div class="card mb-4 mt-3" style="width: 18rem; border-color: #cc6600">
+        <div class="card-body">
+            <h5 class="card-title">Examples</h5>
+            <hr style="color: black;">
+            <img class="card-img-top" src="{% static 'images/exmp.png' %}" style="height: 10em; width: 10em;" >
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      <div class="card mb-4 mt-3" style="width: 18rem; border-color: #cc6600">
+        <div class="card-body">
+            <h5 class="card-title">Prevention from Spam Messages</h5>
+            <hr style="color: black;">
+            <img class="card-img-top" src="{% static 'images/prev.jpg' %}" style="height: 10em; width: 10em;" >
+        </div>
+      </div>
+    </div>
+    
+   
+
+  <!--<div class="col-sm-4">
+     <div class="card mt-4 mb-3" style="width: 18rem; border-color: #cc6600">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Recent Checks</p>
+      </div>
+     </div>
+  </div>   -->
+
+   
+     
+
+{% endblock %}
